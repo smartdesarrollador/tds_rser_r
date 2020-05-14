@@ -11,4 +11,9 @@ class Existencia extends Model
 
     protected $fillable = ["id","existencia",
                             "created_at","updated_at"];
+
+    public function producto()
+    {
+        return $this->hasMany("App\Producto", "existencias_id","id");
+    }
 }

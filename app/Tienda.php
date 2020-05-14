@@ -11,4 +11,9 @@ class Tienda extends Model
 
     protected $fillable = ["id","nombre","direccion",
                             "created_at","updated_at"];
+
+    public function sucursal()
+    {
+        return $this->hasMany("App\Sucursal","tiendas_id","id");
+    }
 }

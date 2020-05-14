@@ -11,4 +11,9 @@ class Notificacion extends Model
 
     protected $fillable = ["id","remitente","destinatario","asunto","mensaje",
                             "created_at","updated_at"];
+
+    public function empresario()
+    {
+        return $this->hasMany("App\Empresario","notificaciones_id","id");
+    }
 }

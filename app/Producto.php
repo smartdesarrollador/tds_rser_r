@@ -17,5 +17,25 @@ class Producto extends Model
     {
         return $this->belongsTo('App\Categoria','categorias_id','id');
     }
+
+    public function marca()
+    {
+        return $this->belongsTo("App\Marca","marcas_id","id");
+    }
+
+    public function rubro()
+    {
+        return $this->belongsTo("App\Rubro","rubros_id","id");
+    }
+
+    public function existencia()
+    {
+        return $this->belongsTo("App\Existencia","existencias_id","id");
+    }
+
+    public function unidad_de_medida()
+    {
+        return $this->belongsTo("App\UnidadDeMedida","unidades_de_medidas_id","id");
+    }
 }
 

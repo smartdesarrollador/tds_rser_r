@@ -11,4 +11,9 @@ class Marca extends Model
 
     protected $fillable = ["id","nombre","descripcion","imagen",
                             "created_at","updated_at"];
+
+    public function producto()
+    {
+        return $this->hasMany("App\Producto", "marcas_id","id");
+    }
 }
