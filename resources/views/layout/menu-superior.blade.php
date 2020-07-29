@@ -29,7 +29,7 @@
                             <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">Notifications</div>
+                                        <div class="drop-title">Notificaciones</div>
                                     </li>
                                     <li>
                                         <div class="message-center">
@@ -37,30 +37,30 @@
                                             <a href="#">
                                                 <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span> </div>
+                                                    <h5>Iniciar administrador</h5> <span class="mail-desc">¡Solo mira mi nuevo administrador!</span> <span class="time">9:30 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Event today</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span> </div>
+                                                    <h5>Evento hoy</h5> <span class="mail-desc">Solo un recordatorio de que tienes un evento</span> <span class="time">9:10 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Settings</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span> </div>
+                                                    <h5>Configuraciones</h5> <span class="mail-desc">Puedes personalizar esta plantilla como quieras</span> <span class="time">9:08 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">¡Solo mira mi administrador!</span> <span class="time">9:02 AM</span> </div>
                                             </a>
                                         </div>
                                     </li>
                                     <li>
-                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Verifica todas las notificaciones</strong> <i class="fa fa-angle-right"></i> </a>
                                     </li>
                                 </ul>
                             </div>
@@ -78,7 +78,7 @@
                             <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">You have 4 new messages</div>
+                                        <div class="drop-title">Tienes 4 mensajes nuevos</div>
                                     </li>
                                     <li>
                                         <div class="message-center">
@@ -86,25 +86,25 @@
                                             <a href="#">
                                                 <div class="user-img"> <img src="admin/assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                                 <div class="mail-contnet">
-                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">¡Solo mira mi administrador!</span> <span class="time">9:30 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="user-img"> <img src="admin/assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                                 <div class="mail-contnet">
-                                                    <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                                    <h5>Sonu Nigam</h5> <span class="mail-desc">¡He cantado una canción! Te veo en</span> <span class="time">9:10 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="user-img"> <img src="admin/assets/images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
                                                 <div class="mail-contnet">
-                                                    <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                                    <h5>Arijit Sinh</h5> <span class="mail-desc">¡Soy un cantante!</span> <span class="time">9:08 AM</span> </div>
                                             </a>
                                             <!-- Message -->
                                             <a href="#">
                                                 <div class="user-img"> <img src="admin/assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
                                                 <div class="mail-contnet">
-                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">¡Solo mira mi administrador!</span> <span class="time">9:02 AM</span> </div>
                                             </a>
                                         </div>
                                     </li>
@@ -236,13 +236,20 @@
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
-                                    <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="#"><i class="ti-user"></i> Mi perfil</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> Mi balance</a></li>
                                     <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Configuración de cuenta</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                   
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                                        @csrf
+                                        <input type="submit" value="Cerrar sesión">
+                                    </form>
+                               
+                                   <!-- <li><a href="#"><i class="fa fa-power-off"></i> Cerrar sesión</a></li> -->
                                 </ul>
                             </div>
                         </li>
