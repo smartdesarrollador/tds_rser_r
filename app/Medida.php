@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Rubro extends Model
+class Medida extends Model
 {
     //
-    protected $table = "rubro";
+    protected $table = "medida";
 
-    protected $fillable = ["id","nombre",
+    protected $fillable = ["id","medida",
                             "created_at","updated_at"];
 
     public function producto()
     {
-        return $this->hasMany("App\Producto","rubro_id","id");
+        return $this->hasMany("App\Producto", "medida_id","id");
     }
 }

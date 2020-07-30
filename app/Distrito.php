@@ -7,18 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Distrito extends Model
 {
     //
-    protected $table = "distritos";
+    protected $table = "distrito";
 
     protected $fillable = ["id","nombre",
-                            "created_at","updated_at","provincias_id"];
+                            "created_at","updated_at","provincia_id"];
 
-    public function provincias()
+    public function provincia()
     {
-        return $this->belongsTo("App\Provincia","provincias_id","id");
+        return $this->belongsTo("App\Provincia","provincia_id","id");
     }
 
-    public function cliente()
+    public function zona_reparto()
     {
-        return $this->hasMany("App\Cliente","distritos_id","id");
+        return $this->hasMany("App\ZonaReparto","distrito_id","id");
     }
 }

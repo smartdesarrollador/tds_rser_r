@@ -9,6 +9,12 @@ class Moneda extends Model
     //
     protected $table = "monedas";
 
-    protected $fillable = ["id","moneda",
+    protected $fillable = ["id","nombre",
                             "created_at","updated_at"];
+
+    public function pedido()
+    {
+        return $this->hasMany("App\Pedido","moneda_id","id");
+    }
+
 }

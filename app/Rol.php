@@ -7,8 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Rol extends Model
 {
     //
-    protected $table = "roles";
+    protected $table = "rol";
 
-    protected $fillable = ["id","rol",
+    protected $fillable = ["id","nombre",
                             "created_at","updated_at"];
+
+    public function usuario()
+    {
+        return $this->hasMany("App\Usuario","rol_id","id");
+    }
 }
+
+
+
+

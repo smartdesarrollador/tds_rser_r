@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class UnidadDeMedida extends Model
 {
     //
-    protected $table = "unidades_de_medidas";
+    protected $table = "unidad_de_medida";
 
-    protected $fillable = ["id","unidad_medida","descripcion",
+    protected $fillable = ["id","unidad_de_medida","descripcion",
                             "created_at","updated_at"];
 
     public function producto()
     {
-        return $this->hasMany("App\UnidadDeMedida","unidades_de_medidas_id","id");
+        return $this->hasMany("App\Producto","unidad_de_medida_id","id");
     }
 }

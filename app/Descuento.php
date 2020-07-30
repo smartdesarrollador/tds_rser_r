@@ -11,4 +11,10 @@ class Descuento extends Model
 
     protected $fillable = ["id","descuento",
                             "created_at","updated_at"];
+
+
+    public function pedido()
+    {
+        return $this->hasMany("App\Pedido","descuento_id","id");
+    }
 }

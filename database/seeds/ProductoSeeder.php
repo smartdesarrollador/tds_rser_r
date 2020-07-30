@@ -44,6 +44,7 @@ class ProductoSeeder extends Seeder
                 'medida_id' => $faker->numberBetween(1,10),
                 'calificacion_id' => $faker->numberBetween(1,2),
                 'proveedor_id' => $faker->numberBetween(1,10),
+                'existencia_id' => $faker->numberBetween(1,2),
                 
             ]);
         }

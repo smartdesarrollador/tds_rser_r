@@ -32,6 +32,7 @@ class CreateProductoTable extends Migration
             $table->unsignedBigInteger('medida_id');
             $table->unsignedBigInteger('calificacion_id');
             $table->unsignedBigInteger('proveedor_id');
+            $table->unsignedBigInteger('existencia_id');
 
             $table->foreign('categoria_id')->references('id')->on('categoria');
             $table->foreign('rubro_id')->references('id')->on('rubro');
@@ -40,6 +41,7 @@ class CreateProductoTable extends Migration
             $table->foreign('medida_id')->references('id')->on('medida');
             $table->foreign('calificacion_id')->references('id')->on('calificacion');
             $table->foreign('proveedor_id')->references('id')->on('proveedor');
+            $table->foreign('existencia_id')->references('id')->on('existencia');
         });
     }
 

@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class EstadoDePedido extends Model
+class Pais extends Model
 {
     //
-    protected $table = "estado_pedido";
+    protected $table = "pais";
 
     protected $fillable = ["id","nombre",
                             "created_at","updated_at"];
 
-    public function pedido()
+    public function departamento()
     {
-        return $this->hasMany("App\Pedido","estado_pedido_id","id");
+        return $this->hasMany("App\Departamento","pais_id","id");
     }
 }

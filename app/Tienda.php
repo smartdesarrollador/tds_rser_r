@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Tienda extends Model
 {
     //
-    protected $table = "tiendas";
+    protected $table = "tienda";
 
     protected $fillable = ["id","nombre","direccion",
                             "created_at","updated_at"];
 
-    public function sucursal()
+    public function empresario()
     {
-        return $this->hasMany("App\Sucursal","tiendas_id","id");
+        return $this->belongsTo("App\Empresario","empresario_id","id");
     }
 }

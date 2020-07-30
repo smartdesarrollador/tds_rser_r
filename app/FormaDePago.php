@@ -11,4 +11,9 @@ class FormaDePago extends Model
 
     protected $fillable = ["id","nombre",
                             "created_at","updated_at"];
+
+    public function pedido()
+    {
+        return $this->hasMany("App\Pedido","forma_pago_id","id");
+    }
 }

@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Empresario extends Model
 {
     //
-    protected $table = "empresarios";
+    protected $table = "empresario";
 
-    protected $fillable = ["id","nombre","apellido","telefono","ruc","correo","direccion","imagen",
-                            "created_at","updated_at","notificaciones_id","tiendas_id"];
+    protected $fillable = ["id","nombre","apellido","correo","direccion","telefono","ruc","imagen",
+                            "created_at","updated_at","notificacion_id"];
 
     public function notificacion()
     {
-        return $this->belongsTo("App\Notificacion","notificaciones_id","id");
+        return $this->belongsTo("App\Notificacion","notificacion_id","id");
     }
 }
