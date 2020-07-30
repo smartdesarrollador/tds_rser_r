@@ -18,12 +18,25 @@ class NotificacionSeeder extends Seeder
 
         $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=15; $i++){
+        for($i = 1; $i<=40; $i++){
 
+            $mes = $faker->numberBetween(1,12);
+            $dia = $faker->numberBetween(1,7);
+            $hora = $faker->numberBetween(1,24);
+            $minuto = $faker->numberBetween(1,59);
+            $segundo = $faker->numberBetween(1,59);
  
             \DB::table('notificacion')->insert([
-                'nombre' => $faker->city(),   
+                'remitente' => $faker->email(),
+                'destinatario' => $faker->email(),
+                'asunto' => $faker->realText($maxNbChars = 50, $indexSize = 2),
+                'mensaje' => $faker->paragraph(),
+                'created_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),
+                'updated_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),
+                
+                
             ]);
+            
         }
     }
 }

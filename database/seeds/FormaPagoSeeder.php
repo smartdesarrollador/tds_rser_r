@@ -14,16 +14,17 @@ class FormaPagoSeeder extends Seeder
     public function run()
     {
         //
-        $faker = Faker::create();
+        \DB::table('forma_pago')->insert([
+            'nombre' =>  "Culqi",
+        ]);
+        
 
-        $carbon = new \Carbon\Carbon();
- 
-        for($i = 1; $i<=15; $i++){
+        \DB::table('forma_pago')->insert([
+            'nombre' =>   "Delivery",
+        ]);
 
- 
-            \DB::table('forma_pago')->insert([
-                'nombre' => $faker->city(),   
-            ]);
-        }
+        \DB::table('forma_pago')->insert([
+            'nombre' =>  "Transferencia Bancaria",
+        ]);
     }
 }

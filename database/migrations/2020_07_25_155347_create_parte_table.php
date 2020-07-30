@@ -19,7 +19,7 @@ class CreateParteTable extends Migration
             $table->string('estado');
             $table->string('posicion');
             $table->string('tipo');
-            $table->text('observaciones');
+            $table->text('observaciones')->nullable();
             $table->timestamps();
         });
     }

@@ -22,7 +22,8 @@ class ParteProductoSeeder extends Seeder
 
  
             \DB::table('parte_producto')->insert([
-                'nombre' => $faker->city(),   
+                'parte_id' => $faker->numberBetween(1,10),
+                'producto_id' => $faker->numberBetween(1,40), 
             ]);
         }
     }

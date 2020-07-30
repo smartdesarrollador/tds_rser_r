@@ -16,8 +16,9 @@ class CreateDocumentoIdentidadTable extends Migration
         Schema::create('documento_identidad', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->integer('numero');
             $table->timestamps();
+
+            
         });
     }
 

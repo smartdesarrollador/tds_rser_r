@@ -16,14 +16,14 @@ class ExistenciaSeeder extends Seeder
         //
         $faker = Faker::create();
 
-        $carbon = new \Carbon\Carbon();
- 
-        for($i = 1; $i<=15; $i++){
+            \DB::table('existencia')->insert([
+                'existencia' => true,
 
- 
-            \DB::table('departamentos')->insert([
-                'nombre' => $faker->city(),   
             ]);
-        }
+
+            \DB::table('existencia')->insert([
+                'existencia' => false,
+
+            ]);
     }
 }

@@ -14,16 +14,16 @@ class RolSeeder extends Seeder
     public function run()
     {
         //
-        $faker = Faker::create();
+        \DB::table('rol')->insert([
+            'nombre' => 'Administrador',  
+        ]);
 
-        $carbon = new \Carbon\Carbon();
- 
-        for($i = 1; $i<=15; $i++){
+        \DB::table('rol')->insert([
+            'nombre' => 'Editor',  
+        ]);
 
- 
-            \DB::table('rol')->insert([
-                'nombre' => $faker->city(),   
-            ]);
-        }
+        \DB::table('rol')->insert([
+            'nombre' => 'Manager',  
+        ]);
     }
 }

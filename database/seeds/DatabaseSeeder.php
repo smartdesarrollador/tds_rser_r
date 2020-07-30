@@ -14,11 +14,11 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
 
         $this->call([
-            ClienteSeeder::class,
-            TarjetaSeeder::class,
+            tarjetaSeeder::class,
             DocumentoIdentidadSeeder::class,
-            PaisSeederSeeder::class,
-            DepartamentoSeederSeeder::class,
+            ClienteSeeder::class,
+            PaisSeeder::class,
+            DepartamentoSeeder::class,
             ProvinciaSeeder::class,
             DistritoSeeder::class,
             ZonaRepartoSeeder::class,

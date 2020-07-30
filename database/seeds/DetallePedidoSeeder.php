@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+use Illuminate\Support\Str as Str;
 
 
 class DetallePedidoSeeder extends Seeder
@@ -17,11 +19,12 @@ class DetallePedidoSeeder extends Seeder
 
         $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=15; $i++){
+        for($i = 1; $i<=150; $i++){
 
  
             \DB::table('detalle_pedido')->insert([
-                'nombre' => $faker->city(),   
+                'producto_id' => $faker->numberBetween(1,40),
+                'pedido_id' => $faker->numberBetween(1,40),   
             ]);
         }
     }

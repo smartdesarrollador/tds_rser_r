@@ -15,7 +15,7 @@ class CreateMedidaTable extends Migration
     {
         Schema::create('medida', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('medida');
+            $table->decimal('medida');
             $table->timestamps();
         });
     }

@@ -17,9 +17,7 @@ class CreateTarjetaTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->timestamps();
-            $table->unsignedBigInteger('cliente_id');
-
-            $table->foreign('cliente_id')->references('id')->on('cliente');
+            
         });
     }
 

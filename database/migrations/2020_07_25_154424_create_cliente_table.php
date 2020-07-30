@@ -17,11 +17,18 @@ class CreateClienteTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->string('apellido');
-            $table->integer('telefono');
+            $table->integer('telefono')->nullable();
+            $table->integer('numero_documento')->nullable();
             $table->string('correo');
             $table->string('direccion');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->timestamps();
+
+            $table->unsignedBigInteger('tarjeta_id');
+            $table->unsignedBigInteger('documento_identidad_id');
+
+            $table->foreign('tarjeta_id')->references('id')->on('tarjeta');
+            $table->foreign('documento_identidad_id')->references('id')->on('documento_identidad');
 
         });
     }

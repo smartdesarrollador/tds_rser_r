@@ -16,14 +16,16 @@ class DocumentoIdentidadSeeder extends Seeder
         //
         $faker = Faker::create();
 
-        $carbon = new \Carbon\Carbon();
- 
-        for($i = 1; $i<=15; $i++){
-
- 
             \DB::table('documento_identidad')->insert([
-                'nombre' => $faker->city(),   
+                'nombre' => "Dni",
+                
+
             ]);
-        }
+
+            \DB::table('documento_identidad')->insert([
+                'nombre' => "Pasaporte",
+                
+
+            ]);
     }
 }

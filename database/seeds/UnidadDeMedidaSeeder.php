@@ -15,14 +15,14 @@ class UnidadDeMedidaSeeder extends Seeder
     {
         //
         $faker = Faker::create();
-
-        $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=15; $i++){
-
+        for($i = 1; $i<=4; $i++){
  
             \DB::table('unidad_de_medida')->insert([
-                'nombre' => $faker->city(),   
+                'unidad_de_medida' => $faker->numberBetween(1,100),
+                'descripcion' => $faker->paragraph(),
+
+                
             ]);
         }
     }

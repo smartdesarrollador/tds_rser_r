@@ -15,10 +15,10 @@ class CreateNotificacionTable extends Migration
     {
         Schema::create('notificacion', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('remitente');
-            $table->string('destinatario');
-            $table->string('asunto');
-            $table->text('mensaje');
+            $table->string('remitente')->nullable();
+            $table->string('destinatario')->nullable();
+            $table->string('asunto')->nullable();
+            $table->text('mensaje')->nullable();
             $table->timestamps();
         });
     }

@@ -22,7 +22,8 @@ class CategoriaIdiomaSeeder extends Seeder
 
  
             \DB::table('categoria_idioma')->insert([
-                'nombre' => $faker->city(),   
+                'categoria_id' => $faker->numberBetween(1,10),
+                'idioma_id' => $faker->numberBetween(1,4),   
             ]);
         }
     }

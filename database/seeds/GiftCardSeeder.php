@@ -22,7 +22,8 @@ class GiftCardSeeder extends Seeder
 
  
             \DB::table('gift_card')->insert([
-                'nombre' => $faker->city(),   
+                'valor' => $faker->randomFloat($nbMaxDecimals = 2, $min = 10, $max = 70),
+                'tipo_gift_card_id' => $faker->numberBetween(1,15),  
             ]);
         }
     }

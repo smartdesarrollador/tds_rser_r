@@ -15,7 +15,7 @@ class CreateGiftCardTable extends Migration
     {
         Schema::create('gift_card', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('valor');
+            $table->decimal('valor');
             $table->timestamps();
 
             $table->unsignedBigInteger('tipo_gift_card_id');

@@ -16,8 +16,8 @@ class CreateZonaRepartoTable extends Migration
         Schema::create('zona_reparto', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('direccion');
-            $table->integer('latitud');
-            $table->integer('longitud');
+            $table->integer('latitud')->nullable();
+            $table->integer('longitud')->nullable();
             $table->timestamps();
 
             $table->unsignedBigInteger('distrito_id');

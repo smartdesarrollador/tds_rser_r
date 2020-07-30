@@ -19,10 +19,10 @@ class CreateProductoTable extends Migration
             $table->text('descripcion');
             $table->decimal('precio');
             $table->string('imagen');
-            $table->string('stock');
+            $table->string('stock')->nullable();
             $table->date('fecha_ingreso');
-            $table->string('posicion');
-            $table->string('acumula_n_punto');
+            $table->string('posicion')->nullable();
+            $table->string('acumula_n_punto')->nullable();
             $table->timestamps();
         
             $table->unsignedBigInteger('categoria_id');

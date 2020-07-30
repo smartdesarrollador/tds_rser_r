@@ -16,15 +16,15 @@ class CalificacionSeeder extends Seeder
         //
         $faker = Faker::create();
 
-        $carbon = new \Carbon\Carbon();
- 
-        for($i = 1; $i<=15; $i++){
+        \DB::table('calificacion')->insert([
+            'nombre' => "Bueno",
 
- 
-            \DB::table('calificacion')->insert([
-                'nombre' => $faker->city(),   
-            ]);
-        }
+        ]);
+
+        \DB::table('calificacion')->insert([
+            'nombre' => "regular",
+
+        ]);
         
     }
 }

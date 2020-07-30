@@ -22,7 +22,7 @@ class MarcaSeeder extends Seeder
 
  
             \DB::table('marca')->insert([
-                'nombre' => $faker->city(),   
+                'nombre' => "marca".$i,   
             ]);
         }
     }

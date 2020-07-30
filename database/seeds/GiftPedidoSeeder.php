@@ -22,7 +22,8 @@ class GiftPedidoSeeder extends Seeder
 
  
             \DB::table('gift_pedido')->insert([
-                'nombre' => $faker->city(),   
+                'gift_card_id' => $faker->numberBetween(1,4),
+                'pedido_id' => $faker->numberBetween(1,40),   
             ]);
         }
     }

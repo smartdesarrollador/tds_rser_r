@@ -22,8 +22,11 @@ class MonedaSeeder extends Seeder
 
  
             \DB::table('moneda')->insert([
-                'nombre' => $faker->city(),   
+                'nombre' => $faker->currencyCode(),  
             ]);
         }
     }
 }
+
+
+

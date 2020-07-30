@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+use Illuminate\Support\Str as Str;
 
 class PaisSeeder extends Seeder
 {
@@ -18,9 +20,16 @@ class PaisSeeder extends Seeder
  
         for($i = 1; $i<=15; $i++){
 
+            $mes = $faker->numberBetween(1,12);
+            $dia = $faker->numberBetween(1,7);
+            $hora = $faker->numberBetween(1,24);
+            $minuto = $faker->numberBetween(1,59);
+            $segundo = $faker->numberBetween(1,59);
  
             \DB::table('pais')->insert([
-                'nombre' => $faker->city(),   
+                'nombre' => $faker->country(), 
+                'created_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),
+                'updated_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),  
             ]);
         }
     }

@@ -22,7 +22,8 @@ class ProductoIdiomaSeeder extends Seeder
 
  
             \DB::table('producto_idioma')->insert([
-                'nombre' => $faker->city(),   
+                'producto_id' => $faker->numberBetween(1,10),
+                'idioma_id' => $faker->numberBetween(1,4),   
             ]);
         }
     }

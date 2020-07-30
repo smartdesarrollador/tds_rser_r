@@ -22,7 +22,8 @@ class ParteIdiomaSeeder extends Seeder
 
  
             \DB::table('parte_idioma')->insert([
-                'nombre' => $faker->city(),   
+                'parte_id' => $faker->numberBetween(1,10),
+                'idioma_id' => $faker->numberBetween(1,4),  
             ]);
         }
     }

@@ -16,11 +16,11 @@ class CreateUsuarioTable extends Migration
         Schema::create('usuario', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->string('apellido');
+            $table->string('password');
             $table->integer('telefono');
             $table->string('correo');
             $table->string('direccion');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->timestamps();
 
             $table->unsignedBigInteger('rol_id');

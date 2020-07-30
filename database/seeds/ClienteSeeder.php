@@ -17,7 +17,7 @@ class ClienteSeeder extends Seeder
 
         $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=300; $i++){
+        for($i = 1; $i<=100; $i++){
 
             $mes = $faker->numberBetween(1,12);
             $dia = $faker->numberBetween(1,7);
@@ -28,14 +28,15 @@ class ClienteSeeder extends Seeder
             \DB::table('cliente')->insert([
                 'nombre' => $faker->firstNameMale(),
                 'apellido' => $faker->lastName(),
-                'telefono' => $faker->numberBetween(1,1000000),
+                'telefono' => $faker->numberBetween(1000000,9999999),
+                'numero_documento' => $faker->numberBetween(10000000,99999999),
                 'correo' => $faker->email(),
                 'direccion' => $faker->address(),                            
                 'imagen' => $faker->imageUrl($width = 640, $height = 480),
                 'created_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),
                 'updated_at' => $carbon->create(2019, $mes, $dia, $hora, $minuto, $segundo)->locale('es'),
-                'tarjetas_id' => $faker->numberBetween(1,10),
-                'distritos_id' => $faker->numberBetween(1,100),
+                'tarjeta_id' => $faker->numberBetween(1,5),
+                'documento_identidad_id' => $faker->numberBetween(1,2),
                 
             ]);
         }

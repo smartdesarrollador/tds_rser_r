@@ -18,11 +18,11 @@ class RubroSeeder extends Seeder
 
         $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=15; $i++){
+        for($i = 1; $i<=10; $i++){
 
  
             \DB::table('rubro')->insert([
-                'nombre' => $faker->city(),   
+                'nombre' => "rubro".$i,   
             ]);
         }
     }

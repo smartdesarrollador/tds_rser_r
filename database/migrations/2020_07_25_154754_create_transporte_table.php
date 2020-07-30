@@ -17,8 +17,8 @@ class CreateTransporteTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->date('tiempo');
-            $table->string('imagen');
-            $table->string('url_seguimiento');
+            $table->string('imagen')->nullable();
+            $table->string('url_seguimiento')->nullable();
             $table->timestamps();
 
             

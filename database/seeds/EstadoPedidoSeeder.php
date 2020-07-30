@@ -18,12 +18,20 @@ class EstadoPedidoSeeder extends Seeder
 
         $carbon = new \Carbon\Carbon();
  
-        for($i = 1; $i<=15; $i++){
-
+    
+            $faker = Faker::create();
  
-            \DB::table('existencia')->insert([
-                'nombre' => $faker->city(),   
+            \DB::table('estado_pedido')->insert([
+                'nombre' => true,
+
             ]);
-        }
+
+            \DB::table('estado_pedido')->insert([
+                'nombre' => false,
+
+            ]);
+
+
+       
     }
 }

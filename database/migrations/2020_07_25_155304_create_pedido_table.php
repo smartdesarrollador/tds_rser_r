@@ -16,13 +16,13 @@ class CreatePedidoTable extends Migration
         Schema::create('pedido', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('numero_pedido');
-            $table->date('fecha');
-            $table->integer('total');
-            $table->integer('impuesto');
-            $table->text('observaciones');
-            $table->integer('delivery');
-            $table->string('feedback_enviado');
-            $table->string('feedback_token');
+            $table->date('fecha')->nullable();
+            $table->decimal('total');
+            $table->decimal('impuesto');
+            $table->text('observaciones')->nullable();
+            $table->string('delivery')->nullable();
+            $table->string('feedback_enviado')->nullable();
+            $table->string('feedback_token')->nullable();
             $table->timestamps();
        
             $table->unsignedBigInteger('forma_pago_id');

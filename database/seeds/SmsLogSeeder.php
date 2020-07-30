@@ -22,7 +22,8 @@ class SmsLogSeeder extends Seeder
 
  
             \DB::table('sms_log')->insert([
-                'nombre' => $faker->city(),   
+                'destino' => $faker->address(),
+                'url' => $faker->url(),
             ]);
         }
     }

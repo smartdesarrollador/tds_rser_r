@@ -15,7 +15,7 @@ class CreatePromocionTable extends Migration
     {
         Schema::create('promocion', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('descripcion');
+            $table->text('descripcion')->nullable();
             $table->timestamps();
         });
     }

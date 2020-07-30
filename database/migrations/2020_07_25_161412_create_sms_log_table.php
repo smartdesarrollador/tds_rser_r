@@ -15,6 +15,8 @@ class CreateSmsLogTable extends Migration
     {
         Schema::create('sms_log', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string("destino");
+            $table->string("url");
             $table->timestamps();
         });
     }

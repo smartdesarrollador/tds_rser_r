@@ -19,9 +19,9 @@ class CreateEmpresarioTable extends Migration
             $table->string('apellido');
             $table->string('correo');
             $table->string('direccion');
-            $table->integer('telefono');
-            $table->integer('ruc');
-            $table->string('imagen');
+            $table->integer('telefono')->nullable();
+            $table->bigInteger('ruc')->nullable();
+            $table->string('imagen')->nullable();
             $table->timestamps();
 
             $table->unsignedBigInteger('notificacion_id');
