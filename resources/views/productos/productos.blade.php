@@ -45,7 +45,11 @@
                     </td>
                     <td width="60" align="center">
                       
+                      @can("crear-notas")
                           <button type="submit" class="btn btn-danger btn-md">Delete</button>
+                      @else
+                            <h3>Usted no tiene permiso</h3>
+                      @endcan
                       
                     </td>
                   </tr>

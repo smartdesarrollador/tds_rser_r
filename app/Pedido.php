@@ -15,6 +15,11 @@ class Pedido extends Model
                             "cuota_id","cliente_id","usuario_id","moneda_id",
                             "empresario_id","promocion_id","estado_pedido_id","descuento_id",
                             "horario_id","zona_reparto_id","transporte_id"];
+                        
+    public function producto()
+    {
+        return $this->belongsToMany('App\Producto', 'detalle_pedido', 'pedido_id', 'producto_id');
+    }
 
     public function forma_pago()
     {

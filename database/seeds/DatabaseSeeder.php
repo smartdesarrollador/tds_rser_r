@@ -14,6 +14,9 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
 
         $this->call([
+            PermisoSeeder::class,
+            RolSeeder::class,
+            UsuarioSeeder::class,
             tarjetaSeeder::class,
             DocumentoIdentidadSeeder::class,
             ClienteSeeder::class,
@@ -27,8 +30,6 @@ class DatabaseSeeder extends Seeder
             NotificacionSeeder::class,
             EmpresarioSeeder::class,
             TiendaSeeder::class,
-            RolSeeder::class,
-            UsuarioSeeder::class,
             MonedaSeeder::class,
             HorarioSeeder::class,
             PromocionSeeder::class,
@@ -57,7 +58,10 @@ class DatabaseSeeder extends Seeder
             DetallePedidoSeeder::class,
             ParteProductoSeeder::class,
             GiftPedidoSeeder::class,
+            UsuarioRolSeeder::class,
+            PermisoRolSeeder::class,
             SmsLogSeeder::class,
+
 
         ]);
     }

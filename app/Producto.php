@@ -13,6 +13,11 @@ class Producto extends Model
                             "created_at","updated_at","categoria_id",
                             "rubro_id","marca_id","unidad_de_medida_id","medida_id","calificacion_id","proveedor_id","existencia_id"];
 
+    public function pedido()
+    {
+        return $this->belongsToMany('App\Pedido', 'detalle_pedido', 'producto_id', 'pedido_id');
+    }
+
     public function categoria()
     {
         return $this->belongsTo('App\Categoria','categoria_id','id');
