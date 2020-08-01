@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('content')
+@section('contenido')
 
 <div class="container-fluid r-aside">
 @if (Session::has('message'))

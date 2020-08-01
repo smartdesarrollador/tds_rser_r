@@ -28,6 +28,9 @@
     <link href="{{ asset('admin/main/css/pages/dashboard1.css') }}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="{{ asset('admin/main/css/colors/default-dark.css') }}" id="theme" rel="stylesheet">
+    
+    <link href="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" id="theme" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -90,7 +93,7 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            @yield('content')
+            @yield('contenido')
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
@@ -143,6 +146,14 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="{{ asset('admin/assets/plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="{{ asset('js/funciones.js') }}"></script>
+
+    
 </body>
 
 </html>

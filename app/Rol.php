@@ -9,8 +9,10 @@ class Rol extends Model
     //
     protected $table = "rol";
 
-    protected $fillable = ["id","nombre",
+    protected $fillable = ["nombre",
                             "created_at","updated_at"];
+
+    protected $guarded = ["id"];
 
     public function usuario()
     {
